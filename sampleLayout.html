@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        /* height: 100vh; */
+      }
+      header {
+        width: 100%;
+        background-color: lime;
+        height: 75px;
+      }
+      .nav {
+        display: inline-block;
+        width: 20%;
+        background-color: antiquewhite;
+        height: 75vh;
+      }
+      article {
+        display: inline-block;
+        width: 58%;
+        height: 50vh;
+      }
+      aside {
+        display: inline-block;
+        width: 20%;
+        height: 75vh;
+        background-color: antiquewhite;
+      }
+      footer {
+        width: 100%;
+        background-color: lime;
+        height: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="mainElement">
+      <header id="header">
+        <nav id="mainNav">
+          <div id="logo">Logo</div>
+          <ul>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+          </ul>
+        </nav>
+      </header>
+      <div
+        id="mainContent"
+        style="width: 200px; height: 100px; background-color: red; color: #fff"
+        data-test="testElement"
+      >
+        <nav class="nav" data-="">Nav</nav>
+        <article>Article</article>
+        <aside>Aside</aside>
+      </div>
+      <footer>Footer</footer>
+    </main>
+    <logo> Siva </logo>
+    <menu> Some </menu>
+  </body>
+</html>
