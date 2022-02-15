@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Text - Colors: */
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+/* Background - colors */
+.bg-blue {
+  color: #fff;
+  background-color: blue;
+}
+
+.bg-lightblue {
+  color: rgb(80, 74, 74);
+  background-color: lightblue;
+}
