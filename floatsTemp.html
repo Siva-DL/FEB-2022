@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      #mainElement {
+        width: 100%ss;
+      }
+      #mainHeader {
+        background-color: #ccc;
+        padding: 10px;
+      }
+      #logo {
+        float: left;
+        width: 20%;
+        padding: 6px;
+        /* background-color: forestgreen; */
+      }
+      #mainNav {
+        width: 80%;
+        float: left;
+        /* background-color: red; */
+      }
+      #mainNav_UL {
+        list-style-type: none;
+        float: right;
+      }
+      #mainNav_UL li {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid;
+      }
+      #mainNav_UL li a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      #bannerContent-1 {
+        width: 75%;
+        margin: auto;
+        padding: 20px;
+      }
+
+      #bannerContent-1 ul li {
+        width: 33.33%;
+        border: 1px solid;
+        padding-top: 30px;
+        padding: 25px;
+      }
+
+      /*-------- Floats --------*/
+      .fL {
+        float: left;
+      }
+      .fR {
+        float: right;
+      }
+
+      .clear-fL {
+        clear: left;
+      }
+      .clear-fR {
+        clear: right;
+      }
+      .clear {
+        clear: both;
+      }
+      /*-------- Floats --------*/
+
+      /* Remove List Icons  */
+
+      .list-none {
+        list-style: none;
+      }
+
+      /* Remove List Icons  */
+
+      /* Paddings  */
+
+      .p-20 {
+        padding: 20px;
+      }
+
+      .pl-10 {
+        padding-left: 10px;
+      }
+      .pl-20 {
+        padding-left: 20px;
+      }
+      .pl-30 {
+        padding-left: 30px;
+      }
+      .pl-40 {
+        padding-left: 40px;
+      }
+      .pl-50 {
+        padding-left: 50px;
+      }
+
+      /* Paddings  */
+
+      /* Heights */
+
+      .h-30 {
+        height: 30vh;
+      }
+      /* Heights */
+
+      /* textAlign */
+      .text-center {
+        text-align: center;
+      }
+      /* textAlign */
+    </style>
+  </head>
+  <body>
+    <main id="mainElement">
+      <header id="mainHeader">
+        <div id="logo">
+          <h2>Logo</h2>
+        </div>
+        <nav id="mainNav">
+          <ul id="mainNav_UL">
+            <li>
+              <a href="#"> Home </a>
+            </li>
+            <li>
+              <a href="#"> About </a>
+            </li>
+            <li>
+              <a href="#"> Contact </a>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </nav>
+        <div class="clear"></div>
+      </header>
+
+      <div id="bannerContent-1">
+        <ul>
+          <li class="fL list-none h-30 text-center">
+            <h3>Header 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              eius.
+            </p>
+          </li>
+          <li class="fL list-none h-30 text-center">
+            <h3>Header 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              eius.
+            </p>
+          </li>
+          <li class="fL list-none h-30 text-center">
+            <h3>Header 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+              blanditiis ratione quod iusto consequatur expedita adipisci
+              suscipit! Minus pariatur
+              <img
+                src="./images/icons/laptop-user-1-1179329.png"
+                alt="userIcon"
+                width="50"
+                class="fR"
+              />
+              sed perspiciatis eos ea odit sint veniam, reprehenderit, dolorem
+              consequatur labore!
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
