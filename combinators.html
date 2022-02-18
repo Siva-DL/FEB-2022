@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* decendent | child | sibling | siblingAll */
+      div#parent > ul > li > a {
+        color: red;
+      }
+
+      #parent ~ div {
+        background-color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <ul id="child">
+        <li>
+          <a href="#"> test </a>
+        </li>
+        <li>text</li>
+      </ul>
+    </div>
+    <div id="sibling">sibling</div>
+    <div id="sibling1">sibling1</div>
+  </body>
+</html>

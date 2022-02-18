@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: darkgoldenrod;
+      }
+      a:hover {
+        color: blue;
+      }
+      a:active {
+        color: green;
+      }
+      ul li:nth-child(2n + 2) {
+        /* 2(2) + 2 */
+        color: red;
+      }
+      ul li:nth-child(2n + 1) {
+        /* 2(2) + 1 */
+        color: green;
+      }
+      ul li:first-child {
+        background-color: lightskyblue;
+      }
+      ul li:last-child {
+        background-color: lightskyblue;
+      }
+      ul li:nth-child(5) {
+        font-size: 20px;
+      }
+      p a:only-child {
+        font-weight: 900;
+        font-size: 40px;
+        padding: 10px;
+      }
+      p::first-letter {
+        font-size: 50px;
+        font-weight: 900;
+      }
+      p::selection {
+        background-color: brown;
+        color: #fff;
+      }
+      p::first-line {
+        color: darkmagenta;
+      }
+      p::before {
+        content: "---";
+      }
+      p::after {
+        content: "---";
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <a href="#"> Home </a> -->
+    <p>
+      <a href="#"> tester</a>
+    </p>
+
+    <ul>
+      <li>red 0</li>
+      <li>red 1</li>
+      <li>green</li>
+      <li>red</li>
+      <li>green</li>
+      <li>red</li>
+      <li>green</li>
+      <li>red</li>
+      <li>green 1</li>
+    </ul>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti
+      voluptates quibusdam dolorum assumenda facilis, obcaecati dignissimos
+      ducimus. Quia, dolorum doloribus quos facilis eligendi id autem excepturi.
+      Blanditiis, possimus aperiam.
+    </p>
+  </body>
+</html>
