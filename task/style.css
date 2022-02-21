@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family: 'Kanit', sans-serif; -
+font-family: 'Redressed', cursive; - wrting text */
+  font-family: "Kanit", sans-serif;
+}
+body {
+  height: 100vh;
+  background: url(./rupixen-com-zWe0UhHdi60-unsplash.jpg) no-repeat fixed;
+  background-size: cover;
+}
+#logo {
+  text-transform: uppercase;
+  font-size: 38px;
+  font-weight: 900;
+}
+#mainHeader {
+  width: 100%;
+  padding: 10px;
+  background: rgba(28, 28, 28, 0.8);
+  color: #fff;
+}
+
+#mainHeader #logo {
+  width: 15%;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  letter-spacing: 3px;
+}
+
+#mainHeader nav {
+  float: left;
+  width: 85%;
+  padding: 15px;
+}
+#mainHeader nav ul {
+  float: right;
+  list-style-type: none;
+}
+#mainHeader nav ul li {
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+#mainHeader nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainHeader nav ul li:hover {
+  border: 1px solid #fff;
+  color: #000;
+  background-color: aliceblue;
+}
+
+#mainHeader nav ul li:hover a {
+  color: #000;
+}
+#bannerContent {
+  height: 100%;
+  float: right;
+  width: 50%;
+}
+h1 {
+  height: 80vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 2.5em;
+}
+.clear {
+  clear: both;
+}

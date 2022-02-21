@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <style>
+      body,
+      html {
+        scroll-behavior: smooth;
+      }
       .contetn-box {
         height: 100vh;
         text-align: center;
@@ -43,10 +47,13 @@
     </style>
   </head>
   <body>
+    <a href="#bg-purple">bg-purple</a>
     <main>
       <section class="contetn-box bg-blue">Home Section</section>
       <section class="contetn-box bg-crimson">Home Section</section>
-      <section class="contetn-box bg-purple">Home Section</section>
+      <section class="contetn-box bg-purple" id="bg-purple">
+        Home Section
+      </section>
       <section class="contetn-box">Home Section</section>
       <section class="contetn-box bg-green">Home Section</section>
       <section class="contetn-box bg-purple">Home Section</section>

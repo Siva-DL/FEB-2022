@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        width: 75%;
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-between;
+      }
+      #log {
+        background-color: red;
+        flex-grow: 3;
+        order: 2;
+      }
+      #mainNav {
+        background-color: greenyellow;
+        flex-grow: 1;
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- display: flexBox -->
+
+    <header>
+      <div id="log">Logo</div>
+      <nav id="mainNav">
+        <ul>
+          <li>One</li>
+          <li>One</li>
+          <li>One</li>
+        </ul>
+      </nav>
+      <!-- <div id="log">Logo</div>
+      <nav id="mainNav">
+        <ul>
+          <li>One</li>
+          <li>One</li>
+          <li>One</li>
+        </ul>
+      </nav> -->
+      <!-- <div class="clear"></div> -->
+    </header>
+  </body>
+</html>
