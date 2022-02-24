@@ -8,7 +8,7 @@
     <style>
       ul {
         background-color: red;
-        height: 500px;
+        height: 250vh;
         position: relative;
       }
       ul li {
@@ -40,15 +40,29 @@
         bottom: 0px;
         background-color: greenyellow;
       }
+
+      ul li:nth-child(1) {
+        position: fixed;
+        top: 50px;
+        right: 0;
+        height: 500px;
+      }
+
+      ul li:nth-child(2) {
+        position: sticky;
+        top: 0px;
+        left: 0;
+      }
     </style>
   </head>
   <body>
     <!-- Positions -->
     <ul>
-      <li>static</li>
+      <!-- <li>static</li>
       <li>realtive</li>
       <li>absolute</li>
-      <li>fixed</li>
+      <li>fixed</li> -->
+      <li>Dummy</li>
       <li>sticky</li>
     </ul>
   </body>

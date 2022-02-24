@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main {
+        width: 200px;
+        background-color: blueviolet;
+        color: #fff;
+        height: 200px;
+        transition: 1s;
+        transition-property: font-size;
+        transition-delay: 3s;
+        transition-timing-function: cubic-bezier(0.29, 0.89, 1, -0.3);
+      }
+      #main:hover {
+        background-color: rgb(5, 102, 70);
+        font-size: 48px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">Hello World!</div>
+  </body>
+</html>

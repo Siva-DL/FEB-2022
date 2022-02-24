@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul li {
+        width: 200px;
+        height: 200px;
+        margin-top: 200px;
+        text-align: center;
+        line-height: 200px;
+        border: 1px solid #000;
+        display: inline-block;
+        transition: 1s;
+      }
+      ul li:first-child:hover {
+        transform: scale(0.5, 1.5);
+      }
+      ul li:nth-child(2):hover {
+        transform: translate(0px, 100px);
+      }
+      ul li:nth-child(3):hover {
+        transform: rotateZ(1turn);
+        border-radius: 50%;
+      }
+      ul li:nth-child(4):hover {
+        transform: skewY(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Scale</li>
+      <li>Translate</li>
+      <li>Rotate</li>
+      <li>Skew</li>
+    </ul>
+  </body>
+</html>
