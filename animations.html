@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 11;
+      }
+      .animate {
+        text-align: center;
+        width: 200px;
+        position: fixed;
+        z-index: -9999;
+        height: 200px;
+        border-radius: 50%;
+        line-height: 200px;
+        background-color: aquamarine;
+        animation-name: test;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate; */
+        animation-timing-function: linear;
+      }
+
+      animate:hover {
+        animation-play-state: paused;
+      }
+      @keyframes test {
+        0% {
+          margin-left: 0px;
+          transform: rotate(1turn);
+        }
+        50% {
+          margin-top: 100px;
+          background-color: crimson;
+          /* color: #fff;  */
+          transform: rotate(2turn);
+        }
+        100% {
+          transform: rotate(3turn);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animate">text</div>
+    <div class="animate">Testing Data</div>
+    <main
+      style="
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+      "
+    >
+      Helo World
+    </main>
+  </body>
+</html>
