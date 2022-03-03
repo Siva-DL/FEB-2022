@@ -1,5 +1,5 @@
 // alert(fruit);
-var fruit = "orange";
+var _fruit = "orange";
 
 // Data Types:
 
@@ -58,3 +58,10 @@ console.log(10 + 10 + "1"); // 11 - Concatination
 console.log("1" * 1); // 1
 console.log("1" - 1); // 0
 console.log("1" / 1); // 1
+
+// n, _,
+
+// 1 !
+
+var day = "Friday";
+"today is " + day + " and Weekend";
