@@ -8,7 +8,7 @@ var users = [
       street: "Kulas Light",
       suite: "Apt. 556",
       city: "Gwenborough",
-      zipcode: "92998-3874",
+      zipcode: "123",
       geo: {
         lat: "-37.3159",
         lng: "81.1496",
@@ -123,7 +123,7 @@ var users = [
       street: "Norberto Crossing",
       suite: "Apt. 950",
       city: "South Christy",
-      zipcode: "23505-1337",
+      zipcode: "123",
       geo: {
         lat: "-71.4197",
         lng: "71.7478",
