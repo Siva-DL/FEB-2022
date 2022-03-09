@@ -83,6 +83,6 @@ function _returnVal(a, b) {
 }
 
 add(_returnVal(5, 5), 20);
-alert(123123);
+// alert(123123);
 
 console.log(_returnVal(5, 9));
