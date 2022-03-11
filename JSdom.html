@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul .listItem {
+        width: 200px;
+        text-align: center;
+        list-style: none;
+        line-height: 200px;
+        height: 200px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parentElement"></div>
+    <h1 id="h1">Test New test</h1>
+    id, class, href, src,
+    <ul id="demo">
+      <li>Demo 1</li>
+      <li>Demo 2</li>
+      <li>Demo 3</li>
+    </ul>
+    <script>
+      // createElement | append | remove |
+
+      document.querySelector("#h1").innerHTML;
+      document.querySelector("#h1").innerHTML =
+        "<a href='#'>" +
+        document.querySelector("#h1").innerHTML +
+        " Old test </a>";
+
+      var Ul = document.createElement("ul"); //  parent
+      var Li = document.createElement("li"); // child
+      Li.innerText = "Test1";
+      Li.className = "listItem test";
+      //   Li.setAttribute("innerText", "listItem");
+
+      Ul.appendChild(Li);
+
+      console.log(Ul);
+      // parent.appendChild(child);
+      document.querySelector("#parentElement").appendChild(Ul);
+
+      var cL = Ul.children;
+      console.log(cL[0].classList[1]);
+
+      cL[0].className = cL[0].classList[1] + " ";
+      Li.className = "listItem test demo";
+      // parent.removeChild(child);
+      //   Ul.removeChild(Li);
+
+      //   Childern Ul
+
+      console.log(document.querySelector("#demo").children[0]); // LI - parent to child
+
+      document.querySelector(
+        "#demo"
+      ).children[0].parentNode.children[1].style.color = "red";
+      console.log(
+        document.querySelector("#demo").children[0].parentNode.children[1]
+      );
+    </script>
+  </body>
+</html>

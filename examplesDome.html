@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      #mainForm {
+        width: 50%;
+        margin: 100px auto;
+      }
+      table,
+      td,
+      th {
+        border-bottom: 1px solid;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 10px;
+        text-align: center;
+      }
+      tr:nth-child(even) {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="mainForm">
+      <input type="text" id="username" placeholder="userName" />
+      <input type="text" id="age" placeholder="age" value="" />
+      <input type="text" id="contact" placeholder="contact" />
+      <button type="button" id="addBtn">Add</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>contact</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tableContent">
+        <!-- <tr>
+          <td>1</td>
+          <td>Siva</td>
+          <td>30</td>
+          <td>12345</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Siva</td>
+          <td>30</td>
+          <td>12345</td>
+        </tr> -->
+      </tbody>
+    </table>
+
+    <script>
+      var username, age, contact, tableContent, addBtn;
+      addBtn = document.querySelector("#addBtn");
+      tableContent = document.querySelector("#tableContent");
+      addBtn.addEventListener("click", function () {
+        //   input: value
+        username = document.querySelector("#username").value;
+        age = document.querySelector("#age").value;
+        contact = document.querySelector("#contact").value;
+
+        console.log(username, age, contact);
+
+        // create TR, TD, Add TEXT to TD
+
+        var TR = document.createElement("tr");
+        var TdNum = document.createElement("td");
+        var TdName = document.createElement("td");
+        var TdAge = document.createElement("td");
+        var TdContact = document.createElement("td");
+        var TdEditorDelete = document.createElement("td");
+
+        var EditBtn = document.createElement("button");
+        var DelBtn = document.createElement("button");
+        EditBtn.innerText = "Edit";
+        DelBtn.innerText = "Delete";
+
+        TdEditorDelete.appendChild(EditBtn);
+        TdEditorDelete.appendChild(DelBtn);
+        // add Values to TD
+
+        TdNum.innerText = 2;
+        TdName.innerText = username;
+        TdAge.innerText = age;
+        TdContact.innerText = contact;
+
+        TR.appendChild(TdNum);
+        TR.appendChild(TdName);
+        TR.appendChild(TdAge);
+        TR.appendChild(TdContact);
+        TR.appendChild(TdEditorDelete);
+
+        console.log(TR);
+        tableContent.appendChild(TR);
+
+        DelBtn.onclick = function () {
+          //   debugger;
+          console.log(this.parentNode);
+          tableContent.removeChild(this.parentNode.parentNode);
+        };
+      });
+    </script>
+  </body>
+</html>

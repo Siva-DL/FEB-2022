@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Template</title>
+
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/form-template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <aside id="mainBgContent">
+        <h1>Welcome to Our Page!</h1>
+      </aside>
+      <aside id="formContent">
+        <section id="mainWrap">
+          <h1 class="mainHeading">Get Started</h1>
+          <div class="formElement">
+            <input
+              type="text"
+              placeholder="username"
+              id="username"
+              autocomplete="off"
+            />
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="formElement">
+            <input type="password" placeholder="password" id="password" />
+            <i class="fa fa-lock"></i>
+          </div>
+          <div class="formElement">
+            <input
+              type="email"
+              placeholder="email"
+              id="email"
+              autocomplete="off"
+            />
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="formElement">
+            <input
+              type="text"
+              name="contact"
+              id="contact"
+              placeholder="Contact Number"
+              maxlength="10"
+            />
+            <i class="fa fa-phone"></i>
+          </div>
+          <div class="radioWrap">
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male"> Male <i class="fa fa-person"></i> </label>
+
+            <input type="radio" name="gender" id="female" value="male" />
+            <label for="female"> Female </label>
+          </div>
+          <div class="formElement">
+            <select name="city" id="city">
+              <option value="none">Choose One</option>
+              <option value="hyd">Hyderabad</option>
+              <option value="bang">Banglore</option>
+              <option value="del">Delhi</option>
+              <option value="mum">Mumbai</option>
+            </select>
+          </div>
+          <div class="formElementAgree">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree"
+              >i agree
+              <span class="termsColor"> Terms and Conditions</span></label
+            >
+          </div>
+          <div class="btnWrap">
+            <button type="button" id="signup">
+              Sign Up <i class="fa fa-right"></i>
+            </button>
+          </div>
+          <div class="signInwrap">
+            already Registered? <a href="javascript:void(0)"> login </a>
+          </div>
+        </section>
+      </aside>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/ba69da0079.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/formTemp.js"></script>
+  </body>
+</html>

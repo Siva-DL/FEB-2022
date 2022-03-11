@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .demoJS {
+        background-color: blue;
+        color: #fff;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo" class="one">Home</div>
+    <div id="demo1" class="demoJS">Home</div>
+    <div id="demo2" class="one">Home</div>
+    <a href="#"> Text </a>
+    <img src="" alt="" />
+
+    <script>
+      // Element, class, Id, querySelector,
+
+      var ElementName = document.getElementsByTagName("div");
+      var className = document.getElementsByClassName("one");
+      className.innerText = "TEXT ";
+
+      for (var i in className) {
+        className[i].innerText = "NEW TEXT";
+      }
+      console.log(className);
+
+      var byId = document.getElementById("demo");
+      byId.innerText = "By ID";
+
+      var eleByClass = document.querySelector(".one");
+      eleByClass.innerText = "by Query";
+      console.log(eleByClass);
+
+      // innerText | innerHTML:
+
+      byId.innerHTML = "<h1>" + byId.innerText + " </h1>";
+
+      // Styling with JS
+      //   byId.style.display = "none";
+
+      // adding it to Attribute:
+
+      byId.className = "demoJS";
+      console.log(byId);
+
+      document.querySelector("img");
+
+      byId.setAttribute("class", "changeId newclass"); // setter
+      byId.getAttribute("id"); // getter
+
+      console.log(byId.getAttribute("class"));
+    </script>
+  </body>
+</html>

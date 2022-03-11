@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  transition: 0.3s;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  background-color: #1f526d;
+}
+#mainBgContent {
+  flex-grow: 2;
+  /* background-color: red; */
+  background: url(../images/icon2_1.jpg) no-repeat top center;
+  background-size: cover;
+}
+
+#mainBgContent h1 {
+  text-align: center;
+  padding-top: 50px;
+  color: #0d93d9;
+  font-size: 48px;
+  text-shadow: 2px 2px 3px rgb(41, 40, 40);
+}
+#formContent {
+  flex-grow: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url(../images/bgTrans.png) no-repeat bottom center;
+  background-size: contain; */
+}
+#mainWrap {
+  width: 40%;
+  height: 75vh;
+  overflow: auto;
+}
+
+.formElement {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  padding-right: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.formElement input {
+  width: 100%;
+  line-height: 30px;
+  border: none;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: transparent;
+}
+.formElement input:focus,
+select:focus {
+  outline: none;
+}
+.formElement input::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+}
+.radioWrap {
+  margin-top: 25px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.radioWrap label {
+  padding-right: 25px;
+}
+.radioWrap input {
+  width: 15px;
+  height: 15px;
+}
+.formElement select {
+  width: 100%;
+  margin-top: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.formElementAgree {
+  margin-top: 20px;
+  color: #fff;
+}
+.formElementAgree input {
+  width: 15px;
+  height: 15px;
+}
+.termsColor {
+  color: #fff7af;
+}
+.btnWrap {
+  width: 100%;
+  margin-top: 8px;
+}
+.btnWrap button#signup {
+  width: 100%;
+  background-color: #0d93d9;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.btnWrap button#signup:hover {
+  background-color: #0d93d99c;
+  letter-spacing: 2px;
+}
+.fa {
+  font-size: 18px;
+  color: #fff;
+  padding: 10px 5px;
+  /* line-height: 30px; */
+}
+.signInwrap {
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.signInwrap a {
+  color: gold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.mainHeading {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+  font-size: 28px;
+  font-weight: 800;
+}
