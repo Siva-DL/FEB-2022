@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      #mainHeader {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: #ccc;
+        color: #fff;
+      }
+      #logo {
+        flex-grow: 2;
+      }
+      nav {
+        flex-grow: 3;
+      }
+      nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        gap: 50px;
+        list-style: none;
+      }
+      nav ul li {
+        line-height: 40px;
+      }
+      #menuItem {
+        display: none;
+      }
+
+      /* Desktop First  */
+      @media screen and (max-width: 1024px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        body {
+          background-color: green;
+        }
+      }
+
+      /* @media screen and (max-width: 768px) {
+        body {
+          background-color: blue;
+        }
+        nav {
+          position: relative;
+          width: 100%;
+          padding: 20px;
+        }
+        nav ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          position: absolute;
+          top: 50px;
+          gap: 1px;
+          text-align: center;
+        }
+        nav ul li {
+          line-height: 50px;
+          margin-top: 2px;
+          background-color: #ccc;
+        }
+        #menuItem {
+          display: inline;
+        }
+      } */
+
+      /* Mobile First */
+      @media screen and (min-width: 320px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        body {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header id="mainHeader">
+        <div id="logo">
+          <h1>Logo</h1>
+        </div>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        <button type="button" id="menuItem">Menu</button>
+      </header>
+    </main>
+  </body>
+</html>
