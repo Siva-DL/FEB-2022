@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="username" />
+    <input type="number" id="contact" />
+    <button type="button" id="btn">Add</button>
+    <script>
+      let username,
+        contact = 0,
+        btn;
+
+      btn = document.getElementById("btn");
+      username = document.getElementById("username");
+      contact = document.getElementById("contact");
+
+      btn.onclick = function () {
+        debugger;
+        console.log(`userName: ${username.value}`, `contact: ${contact.value}`);
+        var arr = [];
+
+        arr.push({ name: username.value, contact: contact.value });
+
+        localStorage.setItem("users", JSON.stringify(arr));
+      };
+
+      console.log(JSON.parse(localStorage.getItem("users")));
+    </script>
+  </body>
+</html>
